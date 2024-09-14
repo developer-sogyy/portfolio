@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48e18bbb43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/crhaxx.dev.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="job">Developer</p>
+                <h1>Hi, I'm <span>Nikola Crhák</span><br>From Czech Republic</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/crhaxx.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm <span>Nikola Crhák</span><br>From Czech RepublicHi, I'm <span>Nikola Crhák</span><br>From Czech RepublicHi, I'm <span>Nikola Crhák</span><br>From Czech Republic</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Game Development</span><br>Building Android/IOS/Windows games</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Shop of Violence Mobile</span><br>Mobile version of Shop of Violence.<br>A horror game inside the shop.<br>Escape or die!</li>
+                            <li><span>Shop of Violence PC</span><br>Windows version of Shop of Violence.<br>A horror game inside the shop.<br>Escape or die!</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sqmeditor@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/crhaxx_mtb/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/users/790862986813898782"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ crhaxx 2024</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
